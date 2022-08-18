@@ -151,11 +151,6 @@ class GfG
         //condition
         if(root1.data != root2.data)
             return false;
-        
-        if(root1.left != null && root2.right == null || root1.left == null && root2.right != null)
-            return false;
-        if(root1.right != null && root2.left == null || root1.right == null && root2.left != null)
-            return false;
         boolean lh = helper(root1.left, root2.right);
         boolean rh = helper(root1.right, root2.left);
         return (lh && rh);
