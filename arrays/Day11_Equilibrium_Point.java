@@ -44,6 +44,7 @@ class Solution {
         for(int i=0;i<n;i++){
             sum+=arr[i];
         }
+        //calculate left sum of the array.
         int lsum = 0;
         for(int i=0;i<n;i++){
             if(lsum==(sum-arr[i]))
